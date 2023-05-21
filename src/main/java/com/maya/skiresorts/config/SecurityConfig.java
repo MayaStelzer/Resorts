@@ -12,12 +12,10 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        // @formatter:off
         http
-                .authorizeRequests((authorize) -> authorize
-                        .anyRequest().permitAll()
+                .authorizeHttpRequests((authorize) -> authorize
+                        .requestMatchers("/","/resorts", "/resorts/", "resorts/*","/resorts/**").permitAll()
                 );
-        // @formatter:on
         return http.build();
     }
 

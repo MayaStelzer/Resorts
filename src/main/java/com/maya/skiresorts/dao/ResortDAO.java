@@ -16,9 +16,11 @@ public class ResortDAO {
                 (rs, rowNum) -> Resort.builder()
                         .resortId(rs.getInt("resort_id"))
                         .resortName(rs.getString("resort_name"))
-                        .squareFootage(rs.getInt("resort_sq_footage"))
-                        .squareFootage(rs.getInt("resort_sq_footage"))
+                        .squareFootage(rs.getInt("resort_acreage"))
                         .verticalFeet(rs.getInt("resort_vertical_height"))
+                        .numLifts(rs.getInt("num_lifts"))
+                        .numRuns(rs.getInt("num_runs"))
+                        .mapLink(rs.getString("resort_map"))
                                         .build());
     }
 }

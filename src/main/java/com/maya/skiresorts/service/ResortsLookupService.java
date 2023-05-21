@@ -23,6 +23,9 @@ public class ResortsLookupService {
                 .resortName(resort.getResortName())
                 .squareFootage(resort.getSquareFootage())
                 .verticalFeet(resort.getVerticalFeet())
+                .numLifts(resort.getNumLifts())
+                .numRuns(resort.getNumRuns())
+                .mapLink(resort.getMapLink())
                 .build();
     }
 }

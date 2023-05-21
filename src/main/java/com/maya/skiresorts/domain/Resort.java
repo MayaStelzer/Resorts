@@ -10,4 +10,7 @@ public class Resort {
     private String resortName;
     private Integer squareFootage;
     private Integer verticalFeet;
+    private Integer numLifts;
+    private Integer numRuns;
+    private String mapLink;
 }
